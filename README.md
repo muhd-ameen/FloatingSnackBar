@@ -44,7 +44,8 @@ import the package in your dart file
   
 
 ```dart
-import  'package:floating_snackbar/floatingSnackBar.dart';```  
+import  'package:floating_snackbar/floatingSnackBar.dart';
+```  
 ## Usage
 
 FloatingSnackBar
@@ -65,6 +66,7 @@ TextButton(
 child:  const  Text('Show SnackBar'),
 ),
 ```
+
 
  
 
