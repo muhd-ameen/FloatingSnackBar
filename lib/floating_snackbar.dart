@@ -1,4 +1,4 @@
 // ignore: file_names
-library floatingSnackBar;
+library floating_snackbar;
 
-export 'package:floating_snackbar/src/floatingSnackBar.dart';
+export 'package:floating_snackbar/src/floating_snackbar.dart';
