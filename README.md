@@ -17,7 +17,7 @@ A package that provides custom floating snackbar for your project.
 
 ## Features
 
-Can provider custom floating snackbar for an minimalistic toast.
+Can Provide custom floating snackbar for an minimalistic toast.
 
 <img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png"> 
 <img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png">
