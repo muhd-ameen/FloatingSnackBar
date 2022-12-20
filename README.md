@@ -20,7 +20,6 @@ A package that provides custom floating snackbar for your project.
 Can Provide custom floating snackbar for an minimalistic toast.
 
 <img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png"> 
-<img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png">
 
 
 ## Getting started
