@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:nod_flur/floatingSnackBar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   const MyHomePage({Key? key, required this.title});
 
   final String title;
@@ -27,7 +30,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('App Bar'),
+        title: const Text('Floating Snackbar'),
       ),
       body: Center(
         child: Column(
@@ -36,13 +39,15 @@ class MyHomePage extends StatelessWidget {
             TextButton(
                 onPressed: () {
                   FloatingSnackBar(
-                      message: 'text',
-                      // textStyle: const TextStyle(color: Colors.red),
-                      context: context,
-                      backgroundColor: Colors.white,
-                      textColor: Colors.black);
+                    message: 'Showing SnackBar..',
+                    context: context,
+                    // textColor: Colors.black,
+                    // textStyle: const TextStyle(color: Colors.red),
+                    // duration: const Duration(milliseconds: 4000),
+                    // backgroundColor: Colors.white,
+                  );
                 },
-                child: const Text('press')),
+                child: const Text('Show SnackBar')),
             const SizedBox(height: 20),
           ],
         ),

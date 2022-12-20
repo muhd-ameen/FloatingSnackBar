@@ -1,3 +1,4 @@
+// ignore: file_names
 library colorful_progress_indicators;
 
-export 'package:FloatingSnackBar/src/floatingSnackBar.dart';
+export 'package:nod_flur/src/floatingSnackBar.dart';
