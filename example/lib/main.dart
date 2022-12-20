@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nod_flur/floatingSnackBar.dart';
+import 'package:floating_snackbar/floatingSnackBar.dart';
 
 void main() {
   runApp(const MyApp());

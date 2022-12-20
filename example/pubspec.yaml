@@ -31,7 +31,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  nod_flur:
+  floating_snackbar:
     path: ../  
 
 dev_dependencies:
