@@ -53,16 +53,16 @@ FloatingSnackBar
 
 ```dart
 TextButton(
-	onPressed: () {
-		FloatingSnackBar(
-			message:  'Hi Ameen Palakkad',
-			context: context,
-			textColor:  Colors.black,
-			textStyle:  const  TextStyle(color:  Colors.red),
-			duration:  const  Duration(milliseconds:  4000),
-			backgroundColor:  Colors.white,
-		);
-	},
+onPressed: () {
+	FloatingSnackBar(
+		message:  'Hi Ameen Palakkad',
+		context: context,
+		textColor:  Colors.black,
+		textStyle:  const  TextStyle(color:  Colors.red),
+		duration:  const  Duration(milliseconds:  4000),
+		backgroundColor:  Colors.white,
+	);
+},
 child:  const  Text('Show SnackBar'),
 ),
 ```
