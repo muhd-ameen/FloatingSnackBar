@@ -1,16 +1,55 @@
-# n
 
-A new Flutter project.
+<!--
+This README describes the package. If you publish this package to pub.dev,
+this README's contents appear on the landing page for your package.
 
-## Getting Started
+For information about how to write a good package README, see the guide for
+[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-This project is a starting point for a Flutter application.
+For general information about developing packages, see the Dart guide for
+[creating packages](https://dart.dev/guides/libraries/create-library-packages)
+and the Flutter guide for
+[developing packages and plugins](https://flutter.dev/developing-packages).![loader](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png)
 
-A few resources to get you started if this is your first Flutter project:
+-->
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+A package that provides custom floating snackbar for your project.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+Can provider custom floating snackbar for an minimalistic toast.
+
+<img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png"> 
+<img height="400" src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png">
+
+
+## Getting started
+
+import the package in your dart file
+
+```dart
+import  'package:floating_snackbar/floatingSnackBar.dart';```
+
+## Usage
+
+FloatingSnackBar
+
+```dart
+
+TextButton(
+	onPressed: () {
+		FloatingSnackBar(
+			message:  'Showing SnackBar!',
+			context: context,
+			textColor:  Colors.black,
+			textStyle:  const  TextStyle(color:  Colors.red),
+			duration:  const  Duration(milliseconds:  4000),
+			backgroundColor:  Colors.white,
+		);
+	},
+	child:  const  Text('Show SnackBar'),
+),
+            
+```
+
+Parse the required 'message' and 'context' to the FloatingSnackBar widget for using your custom toast.
