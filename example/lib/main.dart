@@ -39,7 +39,7 @@ class MyHomePage extends StatelessWidget {
             TextButton(
               onPressed: () {
                 FloatingSnackBar(
-                  message: 'Showing SnackBar!',
+                  message: 'Hi Ameen Palakkad',
                   context: context,
                   // textColor: Colors.black,
                   // textStyle: const TextStyle(color: Colors.red),
