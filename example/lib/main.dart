@@ -37,17 +37,18 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             TextButton(
-                onPressed: () {
-                  FloatingSnackBar(
-                    message: 'Showing SnackBar..',
-                    context: context,
-                    // textColor: Colors.black,
-                    // textStyle: const TextStyle(color: Colors.red),
-                    // duration: const Duration(milliseconds: 4000),
-                    // backgroundColor: Colors.white,
-                  );
-                },
-                child: const Text('Show SnackBar')),
+              onPressed: () {
+                FloatingSnackBar(
+                  message: 'Showing SnackBar!',
+                  context: context,
+                  // textColor: Colors.black,
+                  // textStyle: const TextStyle(color: Colors.red),
+                  // duration: const Duration(milliseconds: 4000),
+                  // backgroundColor: Colors.white,
+                );
+              },
+              child: const Text('Show SnackBar'),
+            ),
             const SizedBox(height: 20),
           ],
         ),
