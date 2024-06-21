@@ -33,9 +33,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
+      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.8",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.1"
     },
     {
       "name": "fake_async",
@@ -51,9 +51,9 @@
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1",
+      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.19"
     },
     {
       "name": "flutter_test",
@@ -63,9 +63,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/lints-2.0.1",
+      "rootUri": "file:///Users/ameen/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "matcher",
@@ -152,7 +152,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2024-06-21T17:03:54.365983Z",
+  "generated": "2024-06-21T17:15:25.441568Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }
