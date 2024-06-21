@@ -93,6 +93,10 @@ child:  const  Text('Show SnackBar 2'),
 **Support**
 
 For support and feedback, feel free to reach out through the issues page. 🛠️
+<br>
+Issue tracker : [Raise here 🐛](https://github.com/muhd-ameen/FloatingSnackBar/issues)
+
+
 ***
 Enjoy using the Floating Snackbar package to enhance your Flutter app! 🚀
 <br><br><br>
