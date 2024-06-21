@@ -24,27 +24,32 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).![loader](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png)-->
 
   
+# floating_snackbar
 
-This Flutter package offers a customizable solution for integrating floating Snackbars into your applications. providing a seamless user experience.
+[![pub package](https://img.shields.io/pub/v/floating_snackbar.svg)](https://pub.dev/packages/floating_snackbar)
 
+A Flutter plugin for showing toasts/snackbar. 🚀
 
-  ## Getting started
+| **Support 🖥️** | Android | iOS   | Linux | macOS  | Web | Windows     |
+|-------------|---------|-------|-------|--------|-----|-------------|
+
+This Flutter package offers a customizable solution for integrating floating Snackbars into your applications. providing a seamless user experience. 🔥
+
+***
+  ## Getting started <br> <br>
+  
+  To use this plugin, add `floating_snackbar` as a [dependency in your pubspec.yaml file](https://flutter.dev/platform-plugins/).
+
 
 import the package in your dart file
 
 ```dart
 import  'package:floating_snackbar/floatingSnackBar.dart';
 ```  
-
-## Features
-
-Custom Floating Snackbar: Display customizable Snackbars anywhere in your app with ease.
-  
-
-
+***
 ## Usage #1
 
-Minimalistic snackbar
+**Minimalistic snackbar 👨🏼‍🌾**
 
 ```dart
 TextButton(
@@ -57,10 +62,10 @@ TextButton(
 child:  const  Text('Show SnackBar 1'),
 ),
 ```
-
+***
 ## Usage #2
 
-Detailed snackbar
+**Detailed snackbar 🦹🏻**
 
 ```dart
 TextButton(
@@ -80,4 +85,11 @@ child:  const  Text('Show SnackBar 2'),
 
  
 
-Parse the required 'message' and 'context' to the FloatingSnackBar widget for using your custom toast.
+`Parse the required 'message' and 'context' to the FloatingSnackBar widget to use your custom toast. 🎉`
+
+**Support**
+
+For support and feedback, feel free to reach out through the issues page. 🛠️
+***
+Enjoy using the Floating Snackbar package to enhance your Flutter app! 🚀
+<br><br><br>
