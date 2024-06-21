@@ -29,7 +29,7 @@ and the Flutter guide for
 [![pub package](https://img.shields.io/pub/v/floating_snackbar.svg)](https://pub.dev/packages/floating_snackbar)
 ![tests](https://github.com/britannio/in_app_review/workflows/tests/badge.svg?branch=master)
 
-A Flutter plugin for showing toasts/snackbar. 🚀 <br><br>
+A Flutter plugin for showing minimal toasts/snackbar. 🚀 <br><br>
 ![In-App Review Android Demo](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/fsb-ss.png)
 
 
