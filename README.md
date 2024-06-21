@@ -25,37 +25,48 @@ and the Flutter guide for
 
   
 
-A package that provides custom floating snackbar for your project.
-
-  
-
-## Features
+This Flutter package offers a customizable solution for integrating floating Snackbars into your applications. providing a seamless user experience.
 
 
-Can Provide custom floating snackbar for an minimalistic toast.
-  
-
-## Getting started
-
-  
+  ## Getting started
 
 import the package in your dart file
-
-  
 
 ```dart
 import  'package:floating_snackbar/floatingSnackBar.dart';
 ```  
-## Usage
 
-FloatingSnackBar
+## Features
 
+Custom Floating Snackbar: Display customizable Snackbars anywhere in your app with ease.
+  
+
+
+## Usage #1
+
+Minimalistic snackbar
 
 ```dart
 TextButton(
-onPressed: () {
+  onPressed: () {
+    FloatingSnackBar(
+       message: 'Hi there! I am a floating SnackBar!',
+	   context: context,
+	);
+},
+child:  const  Text('Show SnackBar 1'),
+),
+```
+
+## Usage #2
+
+Detailed snackbar
+
+```dart
+TextButton(
+  onPressed: () {
 	FloatingSnackBar(
-		message:  'Hi Ameen Palakkad',
+        message: 'Developed by @emeenx on Twitter!',
 		context: context,
 		textColor:  Colors.black,
 		textStyle:  const  TextStyle(color:  Colors.red),
@@ -63,10 +74,9 @@ onPressed: () {
 		backgroundColor:  Colors.white,
 	);
 },
-child:  const  Text('Show SnackBar'),
+child:  const  Text('Show SnackBar 2'),
 ),
-```
-
+``` 
 
  
 

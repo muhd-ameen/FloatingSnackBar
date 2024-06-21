@@ -11,18 +11,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Floating Snackbar Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Floating Snackbar Example'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  // ignore: use_key_in_widget_constructors
-  const MyHomePage({Key? key, required this.title});
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -38,8 +37,20 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             TextButton(
               onPressed: () {
-                FloatingSnackBar(
-                  message: 'Hi Ameen Palakkad',
+                // minimal usage
+                floatingSnackBar(
+                  message: 'Hi there! I am a floating SnackBar!',
+                  context: context,
+                );
+              },
+              child: const Text('Show SnackBar'),
+            ),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                // detailed usage
+                floatingSnackBar(
+                  message: 'Developed by @emeenx on Twitter!',
                   context: context,
                   textColor: Colors.black,
                   textStyle: const TextStyle(color: Colors.red),
@@ -49,7 +60,6 @@ class MyHomePage extends StatelessWidget {
               },
               child: const Text('Show SnackBar'),
             ),
-            const SizedBox(height: 20),
           ],
         ),
       ),
