@@ -20,4 +20,5 @@
 - Added the image for the snackbar
 - Updated plugin to hide the current snackbar
 - Updated the example app to show the snackbar with a different background color
+- Updated the environment sdk to ">=2.16.2 <4.0.0"
 
