@@ -57,9 +57,9 @@ import  'package:floating_snackbar/floatingSnackBar.dart';
 ```dart
 TextButton(
   onPressed: () {
-    FloatingSnackBar(
-       message: 'Hi there! I am a floating SnackBar!',
-	   context: context,
+    floatingSnackBar(
+    	message: 'Hi there! I am a floating SnackBar!',
+		context: context,
 	);
 },
 child:  const  Text('Show SnackBar 1'),
@@ -73,7 +73,7 @@ child:  const  Text('Show SnackBar 1'),
 ```dart
 TextButton(
   onPressed: () {
-	FloatingSnackBar(
+	floatingSnackBar(
         message: 'Developed by @emeenx on Twitter!',
 		context: context,
 		textColor:  Colors.black,
@@ -88,7 +88,7 @@ child:  const  Text('Show SnackBar 2'),
 
  
 
-`Parse the required 'message' and 'context' to the FloatingSnackBar widget to use your custom toast. 🎉`
+`Parse the required 'message' and 'context' to the floatingSnackBar function to use your custom toast. 🎉`
 
 **Support**
 
