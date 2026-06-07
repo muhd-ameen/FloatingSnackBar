@@ -10,8 +10,6 @@ Keep the dead-simple one-liner you already know — or reach for variants,
 positioning, theming, actions, progress bars, and context-free display when you
 need them. **Pure Dart, zero native code, works on every platform.**
 
-![Floating SnackBar demo](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/fsb-ss.png)
-
 | Android | iOS | Linux | macOS | Web | Windows |
 |:-------:|:---:|:-----:|:-----:|:---:|:-------:|
 |   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
