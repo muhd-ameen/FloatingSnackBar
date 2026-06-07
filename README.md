@@ -6,11 +6,9 @@
 
 Beautiful, customizable floating snackbars / toasts for Flutter. 🚀
 
-Keep the dead-simple one-liner you already know — or reach for variants,
+Keep the dead-simple one-liner you already know - or reach for variants,
 positioning, theming, actions, progress bars, and context-free display when you
 need them. **Pure Dart, zero native code, works on every platform.**
-
-![Floating SnackBar demo](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/fsb-ss.png)
 
 | Android | iOS | Linux | macOS | Web | Windows |
 |:-------:|:---:|:-----:|:-----:|:---:|:-------:|
@@ -45,15 +43,15 @@ need them. **Pure Dart, zero native code, works on every platform.**
 
 ## ✨ Features
 
-- ✅ **Backward compatible** — the original `floatingSnackBar()` still works.
-- 🎨 **Variants** — `success`, `error`, `warning`, `info`, with default colors & icons.
-- 📍 **Positioning** — show at the **top** or **bottom** of the screen.
-- 🧩 **Rich content** — title + body, leading icon/widget, trailing action button.
-- ⏳ **Progress bar** — optional countdown indicator.
-- 👆 **Dismissal** — tap-to-dismiss and swipe-to-dismiss.
-- 🌈 **Animations** — slide, fade, or scale.
-- 🌍 **Global theming** — set defaults once via `FloatingSnackBar.theme`.
-- 🪄 **Context-free** — show from services/blocs with no `BuildContext`.
+- ✅ **Backward compatible** - the original `floatingSnackBar()` still works.
+- 🎨 **Variants** - `success`, `error`, `warning`, `info`, with default colors & icons.
+- 📍 **Positioning** - show at the **top** or **bottom** of the screen.
+- 🧩 **Rich content** - title + body, leading icon/widget, trailing action button.
+- ⏳ **Progress bar** - optional countdown indicator.
+- 👆 **Dismissal** - tap-to-dismiss and swipe-to-dismiss.
+- 🌈 **Animations** - slide, fade, or scale.
+- 🌍 **Global theming** - set defaults once via `FloatingSnackBar.theme`.
+- 🪄 **Context-free** - show from services/blocs with no `BuildContext`.
 
 ---
 
@@ -144,7 +142,7 @@ MaterialApp(
 );
 ```
 
-Then call from anywhere — a service, a bloc, an interceptor:
+Then call from anywhere - a service, a bloc, an interceptor:
 
 ```dart
 FloatingSnackBar.info(null, 'No BuildContext needed!');

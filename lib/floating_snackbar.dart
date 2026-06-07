@@ -1,8 +1,8 @@
 /// Customizable floating snackbars/toasts for Flutter.
 ///
 /// Two entry points:
-///  * [floatingSnackBar] — the original one-line function (backward compatible).
-///  * [FloatingSnackBar] — the rich API with variants, positioning, theming,
+///  * [floatingSnackBar] - the original one-line function (backward compatible).
+///  * [FloatingSnackBar] - the rich API with variants, positioning, theming,
 ///    actions, progress, and context-free (overlay) display.
 library;
 
