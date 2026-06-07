@@ -1,0 +1,47 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter / Dart / Pub
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+pubspec.lock
+**/doc/api/
+.flutter-plugins
+.flutter-plugins-dependencies
+coverage/
+
+# Symbols
+app.*.symbols
+
+# Exceptions to the above rules.
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Example machine-specific files
+example/android/local.properties
+
+# Flutter generated iOS/macOS files (regenerated on build)
+**/Flutter/ephemeral/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+**/Flutter/.last_build_id

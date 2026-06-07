@@ -1,37 +1,48 @@
 import 'package:flutter/material.dart';
 
-// This function displays a floating SnackBar with customizable properties.
+import 'floating_snackbar_api.dart';
+
+/// Displays a minimal floating snackbar using [ScaffoldMessenger].
+///
+/// This is the original, dead-simple entry point and remains fully backward
+/// compatible: existing calls work unchanged.
+///
+/// ```dart
+/// floatingSnackBar(message: 'Hi there!', context: context);
+/// ```
+///
+/// Unset visual arguments fall back to [FloatingSnackBar.theme], so global
+/// theming applies here too. For variants (success/error/...), positioning,
+/// actions, or context-free usage, prefer the richer [FloatingSnackBar] API.
 void floatingSnackBar({
-  required String message, // The message to display in the SnackBar
-  required BuildContext context, // The BuildContext to show the SnackBar within
-  Duration? duration, // Optional: Duration for which the SnackBar is displayed
-  TextStyle? textStyle, // Optional: Text style for the message text
-  Color? textColor, // Optional: Text color for the message text
-  Color? backgroundColor, // Optional: Background color of the SnackBar
+  required String message,
+  required BuildContext context,
+  Duration? duration,
+  TextStyle? textStyle,
+  Color? textColor,
+  Color? backgroundColor,
 }) {
-  // Create a SnackBar widget with specified properties
-  var snack = SnackBar(
-    behavior: SnackBarBehavior.floating, // Make the SnackBar floating
-    margin: const EdgeInsets.all(20), // Set margin around the SnackBar
-    duration: duration ??
-        const Duration(milliseconds: 4000), // Default duration if not provided
+  final theme = FloatingSnackBar.theme;
+  final resolvedTextColor = textColor ?? theme.textColor;
+
+  final snack = SnackBar(
+    behavior: SnackBarBehavior.floating,
+    margin: theme.margin,
+    duration: duration ?? theme.duration,
     shape: RoundedRectangleBorder(
-        borderRadius:
-            BorderRadius.circular(10)), // Rounded corners for the SnackBar
-    content: Text(
-      message, // Display the provided message text
-      style: textStyle ??
-          TextStyle(
-              color: textColor ??
-                  Colors.white), // Apply provided or default text style
+      borderRadius: BorderRadius.circular(theme.borderRadius),
     ),
-    backgroundColor: backgroundColor ??
-        Colors.black.withAlpha(200), // Default background color if not provided
+    content: Text(
+      message,
+      style: (theme.textStyle ?? const TextStyle())
+          .copyWith(color: resolvedTextColor)
+          .merge(textStyle),
+    ),
+    backgroundColor:
+        backgroundColor ?? theme.backgroundColor ?? Colors.black.withAlpha(200),
   );
 
-  // Hide any currently displayed SnackBar
-  ScaffoldMessenger.of(context).hideCurrentSnackBar();
-
-  // Show the created SnackBar
-  ScaffoldMessenger.of(context).showSnackBar(snack);
+  ScaffoldMessenger.of(context)
+    ..hideCurrentSnackBar()
+    ..showSnackBar(snack);
 }
