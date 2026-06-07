@@ -1,102 +1,224 @@
-
-  
-
-<!--
-
-This README describes the package. If you publish this package to pub.dev,
-
-this README's contents appear on the landing page for your package.
-
-  
-
-For information about how to write a good package README, see the guide for
-
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-  
-
-For general information about developing packages, see the Dart guide for
-
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-
-and the Flutter guide for
-
-[developing packages and plugins](https://flutter.dev/developing-packages).![loader](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/master/assets/image/flutter_02.png)-->
-
-  
 # floating_snackbar
 
 [![pub package](https://img.shields.io/pub/v/floating_snackbar.svg)](https://pub.dev/packages/floating_snackbar)
-![tests](https://github.com/britannio/in_app_review/workflows/tests/badge.svg?branch=master)
+[![CI](https://github.com/muhd-ameen/FloatingSnackBar/actions/workflows/ci.yml/badge.svg)](https://github.com/muhd-ameen/FloatingSnackBar/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/muhd-ameen/FloatingSnackBar.svg)](LICENSE)
 
-A Flutter plugin for showing minimal toasts/snackbar. 🚀 <br><br>
-![In-App Review Android Demo](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/fsb-ss.png)
+Beautiful, customizable floating snackbars / toasts for Flutter. 🚀
 
+Keep the dead-simple one-liner you already know — or reach for variants,
+positioning, theming, actions, progress bars, and context-free display when you
+need them. **Pure Dart, zero native code, works on every platform.**
 
-| **Support 🖥️** | Android | iOS   | Linux | macOS  | Web | Windows     |
-|-------------|---------|-------|-------|--------|-----|-------------|
+![Floating SnackBar demo](https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/fsb-ss.png)
 
-This Flutter package offers a customizable solution for integrating floating Snackbars into your applications. providing a seamless user experience. 🔥
+| Android | iOS | Linux | macOS | Web | Windows |
+|:-------:|:---:|:-----:|:-----:|:---:|:-------:|
+|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
 
-***
-  ## Getting started <br> <br>
-  
-  To use this plugin, add `floating_snackbar` as a [dependency in your pubspec.yaml file](https://flutter.dev/platform-plugins/).
+---
 
+## 📸 Screenshots
 
-import the package in your dart file
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/screenshot_1.png" alt="Plain example app screen" width="180"/>
+      <br/><sub><b>Example app</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/screenshot_2.png" alt="Progress bar" width="180"/>
+      <br/><sub><b>Progress</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/screenshot_3.png" alt="Bottom snackbar with title" width="180"/>
+      <br/><sub><b>Bottom with title</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/muhd-ameen/FloatingSnackBar/main/assets/image/screenshot_4.png" alt="Top position" width="180"/>
+      <br/><sub><b>Top position</b></sub>
+    </td>
+  </tr>
+</table>
 
-```dart
-import  'package:floating_snackbar/floatingSnackBar.dart';
-```  
-***
-## Usage #1
+---
 
-**Minimalistic snackbar 👨🏼‍🌾**
+## ✨ Features
 
-```dart
-TextButton(
-  onPressed: () {
-    floatingSnackBar(
-    	message: 'Hi there! I am a floating SnackBar!',
-		context: context,
-	);
-},
-child:  const  Text('Show SnackBar 1'),
-),
+- ✅ **Backward compatible** — the original `floatingSnackBar()` still works.
+- 🎨 **Variants** — `success`, `error`, `warning`, `info`, with default colors & icons.
+- 📍 **Positioning** — show at the **top** or **bottom** of the screen.
+- 🧩 **Rich content** — title + body, leading icon/widget, trailing action button.
+- ⏳ **Progress bar** — optional countdown indicator.
+- 👆 **Dismissal** — tap-to-dismiss and swipe-to-dismiss.
+- 🌈 **Animations** — slide, fade, or scale.
+- 🌍 **Global theming** — set defaults once via `FloatingSnackBar.theme`.
+- 🪄 **Context-free** — show from services/blocs with no `BuildContext`.
+
+---
+
+## 📦 Getting started
+
+Add the dependency:
+
+```yaml
+dependencies:
+  floating_snackbar: ^2.0.0
 ```
-***
-## Usage #2
 
-**Detailed snackbar 🦹🏻**
+Import it:
 
 ```dart
-TextButton(
-  onPressed: () {
-	floatingSnackBar(
-        message: 'Developed by @emeenx on Twitter!',
-		context: context,
-		textColor:  Colors.black,
-		textStyle:  const  TextStyle(color:  Colors.red),
-		duration:  const  Duration(milliseconds:  4000),
-		backgroundColor:  Colors.white,
-	);
-},
-child:  const  Text('Show SnackBar 2'),
-),
-``` 
+import 'package:floating_snackbar/floating_snackbar.dart';
+```
 
- 
+---
 
-`Parse the required 'message' and 'context' to the floatingSnackBar function to use your custom toast. 🎉`
+## 🚀 Usage
 
-**Support**
+### The simple one-liner (unchanged)
 
-For support and feedback, feel free to reach out through the issues page. 🛠️
-<br>
-Issue tracker : [Raise here 🐛](https://github.com/muhd-ameen/FloatingSnackBar/issues)
+```dart
+floatingSnackBar(
+  message: 'Hi there! I am a floating SnackBar!',
+  context: context,
+);
+```
 
+### Variants
 
-***
-Enjoy using the Floating Snackbar package to enhance your Flutter app! 🚀
-<br><br><br>
+```dart
+FloatingSnackBar.success(context, 'Saved successfully!');
+FloatingSnackBar.error(context, 'Something went wrong.');
+FloatingSnackBar.warning(context, 'Battery is running low.');
+FloatingSnackBar.info(context, 'A new update is available.');
+```
+
+### Positioning
+
+```dart
+FloatingSnackBar.success(
+  context,
+  'Shown at the top!',
+  position: FloatingSnackBarPosition.top,
+);
+```
+
+### Title, action & progress
+
+```dart
+FloatingSnackBar.show(
+  context,
+  'Item deleted.',
+  title: 'Done',
+  position: FloatingSnackBarPosition.bottom,
+  showProgress: true,
+  duration: const Duration(seconds: 5),
+  action: FloatingSnackBarAction(
+    label: 'UNDO',
+    onPressed: () => restoreItem(),
+  ),
+);
+```
+
+### Custom leading widget & colors
+
+```dart
+FloatingSnackBar.show(
+  context,
+  'You earned a new badge!',
+  leading: const Icon(Icons.emoji_events, color: Colors.amber),
+  backgroundColor: const Color(0xFF311B92),
+  animation: FloatingSnackBarAnimation.scale,
+);
+```
+
+### Context-free (no `BuildContext`)
+
+Wire the navigator key into your app once:
+
+```dart
+MaterialApp(
+  navigatorKey: FloatingSnackBar.navigatorKey,
+  // ...
+);
+```
+
+Then call from anywhere — a service, a bloc, an interceptor:
+
+```dart
+FloatingSnackBar.info(null, 'No BuildContext needed!');
+```
+
+> Already have a navigator key? Just assign it:
+> `FloatingSnackBar.navigatorKey = myExistingKey;`
+
+### Global theming
+
+Set your defaults once (e.g. in `main`) and every snackbar follows them:
+
+```dart
+FloatingSnackBar.theme = const FloatingSnackBarTheme(
+  defaultPosition: FloatingSnackBarPosition.top,
+  borderRadius: 16,
+  duration: Duration(seconds: 3),
+  successColor: Colors.teal,
+  animation: FloatingSnackBarAnimation.slide,
+);
+```
+
+### Dismiss programmatically
+
+```dart
+FloatingSnackBar.dismiss(context); // or dismiss() with the navigatorKey set
+```
+
+---
+
+## 📋 API reference
+
+### `FloatingSnackBar.show(context, message, { ... })`
+
+| Parameter         | Type                          | Description                                            |
+|-------------------|-------------------------------|--------------------------------------------------------|
+| `context`         | `BuildContext?`               | Required unless `navigatorKey` is wired up.            |
+| `message`         | `String`                      | The body text.                                         |
+| `title`           | `String?`                     | Optional bold title above the message.                 |
+| `type`            | `FloatingSnackBarType`        | `normal` / `success` / `error` / `warning` / `info`.   |
+| `position`        | `FloatingSnackBarPosition?`   | `top` or `bottom`.                                     |
+| `animation`       | `FloatingSnackBarAnimation?`  | `slide` / `fade` / `scale`.                            |
+| `duration`        | `Duration?`                   | Visible time before auto-dismiss.                      |
+| `leading`         | `Widget?`                     | Custom leading widget (overrides the type icon).       |
+| `action`          | `FloatingSnackBarAction?`     | Trailing action button.                                |
+| `backgroundColor` | `Color?`                      | Overrides the type/theme background.                   |
+| `textColor`       | `Color?`                      | Overrides the text color.                              |
+| `textStyle`       | `TextStyle?`                  | Overrides the message style.                           |
+| `titleStyle`      | `TextStyle?`                  | Overrides the title style.                             |
+| `dismissOnTap`    | `bool?`                       | Tap the card to dismiss.                               |
+| `showProgress`    | `bool?`                       | Show a countdown bar.                                  |
+| `replace`         | `bool`                        | Replace the current snackbar (default) or queue.       |
+
+`success` / `error` / `warning` / `info` are thin wrappers over `show` with the
+matching `type`. Every unset argument falls back to `FloatingSnackBar.theme`.
+
+---
+
+## 🧪 Example
+
+A full demo of every feature lives in [`example/`](example/lib/main.dart). Run it
+with:
+
+```bash
+cd example
+flutter run
+```
+
+---
+
+## 🤝 Support
+
+Found a bug or have an idea? [Open an issue](https://github.com/muhd-ameen/FloatingSnackBar/issues). 🐛
+
+---
+
+Enjoy building delightful Flutter apps with **floating_snackbar**! 🎉
